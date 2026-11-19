@@ -1,2 +1,52 @@
-# ros2-mobile-robot-navigation
-ROS2-based autonomous navigation project for a physical mobile robot, including SLAM, localization, Nav2, and obstacle avoidance.
+# ROS2 Mobile Robot Autonomous Navigation
+
+基于 ROS2 Humble 的移动机器人自主导航项目。
+
+## 项目介绍
+
+目前已有一辆实体移动机器人小车，准备基于 ROS2 搭建完整的自主导航系统，实现室内环境建图、机器人定位、路径规划和自动避障。
+
+项目目前处于初期开发阶段，主要工作是完成软硬件接口设计和导航框架集成。
+
+## 计划使用的技术栈
+
+- ROS2 Humble
+- Python / C++
+- slam_toolbox：二维激光 SLAM
+- Nav2：自主导航及路径规划
+- AMCL：地图定位
+- RViz2：地图和传感器数据可视化
+- 2D LiDAR / IMU / 轮式里程计
+
+具体硬件型号和通信接口将在后续开发过程中确定。
+
+## 开发计划
+
+- [ ] 搭建 ROS2 Humble 开发环境
+- [ ] 建立 ROS2 工作空间与基础功能包
+- [ ] 完成小车底盘运动控制接口
+- [ ] 接入二维激光雷达和 IMU
+- [ ] 使用 slam_toolbox 实现建图
+- [ ] 集成 Nav2 实现自主导航
+- [ ] 实现障碍物检测和避障
+- [ ] 开发 Web 地图控制界面
+
+## 希望 Devin 协助完成的任务
+
+希望利用 Devin AI 参与实际开发，而不仅是生成示例代码。
+
+第一阶段重点：
+
+1. 设计 ROS2 工作空间目录结构。
+2. 创建底盘控制、传感器和导航功能包。
+3. 编写可独立运行的基础测试节点。
+4. 配置基础 TF 坐标关系。
+5. 建立日志收集和调试流程。
+
+后续计划结合真实硬件测试数据，逐步解决传感器融合、定位漂移和导航稳定性等问题。
+
+## 当前状态
+
+项目正在开发中。
+
+已有实体小车，导航系统尚未完成。该仓库用于记录开发计划、非敏感代码、调试过程和后续测试结果。
